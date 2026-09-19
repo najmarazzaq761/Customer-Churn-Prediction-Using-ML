@@ -7,7 +7,7 @@ https://github.com/user-attachments/assets/6ca3f953-04e2-4bdb-b4a4-7c09dacb54b5
 
 This open-source **E-commerce Customer Churn Analysis & Prediction System** enables businesses to analyze customer behavior, predict churn, and take proactive actions using cutting-edge Machine Learning (ML) and Data Science techniques.  
 
-Built with Python, SQL, and Power BI, this system automates data processing, applies supervised & unsupervised learning, and presents insights via interactive dashboards.  
+Built with Python, SQL, and Power BI, this system automates data processing, applies supervised learning, and presents insights via interactive dashboards.  
 
 **Star this repository** if you're passionate about customer analytics & AI-driven retention strategies!  
 
@@ -26,7 +26,7 @@ Built with Python, SQL, and Power BI, this system automates data processing, app
 ✅ **Data Preprocessing & Cleaning** – Handle missing values, feature engineering, outlier detection  
 ✅ **Exploratory Data Analysis (EDA)** – RFM analysis, correlation analysis, customer segmentation  
 ✅ **Predictive ML Models** – Implement Logistic Regression, Decision Trees, Random Forest, XGBoost 
-✅ **Customer Segmentation** – Apply K-Means & DBSCAN clustering for personalized engagement  
+✅ **Customer Segmentation** – Apply K-Means & DBSCAN clustering for personalized engagement  (comming soon)
 ✅ **Interactive Dashboards** – Power BI reports with real-time churn insights  
 ✅ **Model Deployment** – Deploy Model with Streamlit
 
@@ -43,7 +43,7 @@ Built with Python, SQL, and Power BI, this system automates data processing, app
 ## **Tech Stack & Tools Used**  
 **Programming & Data Processing:** Python, Pandas, NumPy
 **Data Visualization:** Power BI, Matplotlib, Seaborn  
-**Machine Learning Models:** Logistic Regression, Random Forest, XGBoost, Deep Learning  
+**Machine Learning Models:** Logistic Regression, Decision Tree, Random Forest, XGBoost
 **Interactive Dashboards:** Power BI reports with real-time churn insights
 
 ---
