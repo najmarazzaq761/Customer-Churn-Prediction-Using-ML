@@ -26,7 +26,9 @@ Built with Python, SQL, and Power BI, this system automates data processing, app
 ✅ **Data Preprocessing & Cleaning** – Handle missing values, feature engineering, outlier detection  
 ✅ **Exploratory Data Analysis (EDA)** – RFM analysis, correlation analysis, customer segmentation  
 ✅ **Predictive ML Models** – Implement Logistic Regression, Decision Trees, Random Forest, XGBoost 
+
 ✅ **Customer Segmentation** – Apply K-Means & DBSCAN clustering for personalized engagement  (comming soon)
+
 ✅ **Interactive Dashboards** – Power BI reports with real-time churn insights  
 ✅ **Model Deployment** – Deploy Model with Streamlit
 
