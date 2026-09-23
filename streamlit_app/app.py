@@ -5,7 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 # Title of Dashboard
-st.title("📊 Data Seekho Customer Data Analysis Dashboard")
+st.title("Customer Data Analysis Dashboard")
 
 # Upload CSV File
 uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
@@ -49,12 +49,12 @@ if uploaded_file:
     sales_trend = df.groupby("month")["price"].sum().reset_index()
     sales_trend["month"] = pd.to_datetime(sales_trend["month"])
     
-    st.subheader("📅 Sales Trend Over Time")
+    st.subheader("Sales Trend Over Time")
     fig = px.line(sales_trend, x="month", y="price", markers=True, title="Sales Trend Over Time")
     st.plotly_chart(fig)
     
     # Customer Age Distribution (Bar Graph)
-    st.subheader("🎂 Customer Age Distribution")
+    st.subheader("Customer Age Distribution")
     age_distribution = df["age"].value_counts().reset_index()
     age_distribution.columns = ["Age", "Count"]
     fig = px.bar(
@@ -69,19 +69,19 @@ if uploaded_file:
     st.plotly_chart(fig)
     
     # Sales by Category Visualization
-    st.subheader("📦 Sales by Category")
+    st.subheader("Sales by Category")
     category_sales = df.groupby("category")["price"].sum().reset_index()
     fig = px.bar(category_sales, x="category", y="price", title="Sales by Category", color="price")
     st.plotly_chart(fig)
     
     # Top Selling Products Visualization
-    st.subheader("🏆 Top Selling Products")
+    st.subheader("Top Selling Products")
     top_products = df.groupby("item")["price"].sum().nlargest(10).reset_index()
     fig = px.bar(top_products, x="item", y="price", title="Top 10 Selling Products", color="price")
     st.plotly_chart(fig)
     
     # World Map Visualization for Sales Distribution
-    st.subheader("🌍 Sales Distribution (World Map)")
+    st.subheader("Sales Distribution (World Map)")
     map_df = df.groupby(["city", "country"], as_index=False)["price"].sum()
     fig = px.scatter_geo(
         map_df, 
@@ -96,8 +96,8 @@ if uploaded_file:
     
     
     # Download Cleaned Data Button
-    st.subheader("📥 Download Cleaned Data")
+    st.subheader("Download Cleaned Data")
     st.download_button("Download CSV", filtered_df.to_csv(index=False), file_name="cleaned_data.csv", mime="text/csv")
     
 # Display message to guide users on uploading CSV file
-st.info("👆 Upload your CSV file to analyze customer data!")
+st.info("Upload your CSV file to analyze customer data!")

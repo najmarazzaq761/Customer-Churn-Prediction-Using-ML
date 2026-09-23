@@ -1,145 +1,170 @@
-# **E-commerce Customer Churn Analysis & Prediction System**  
+# Customer Churn Prediction Using ML
+
+This project predicts whether a customer is likely to churn based on e-commerce customer data. It combines data preprocessing, exploratory analysis, feature engineering, machine learning, and a Streamlit-based prediction interface.
+
+The repository is built for learning and experimentation with real-world churn prediction workflows in Python.
 
 
+## Overview
 
-https://github.com/user-attachments/assets/6ca3f953-04e2-4bdb-b4a4-7c09dacb54b5
+Customer churn prediction helps businesses identify customers who may stop buying in the future. This project uses historical transaction/customer information to train a machine learning model and predict churn risk.
+
+The current repository includes:
+- a churn analysis notebook with preprocessing and model training logic
+- saved model artifacts for reuse
+- a Streamlit app for user-driven churn prediction
+- a dashboard app for data exploration
+- a dataset for customer churn analysis
 
 
-This open-source **E-commerce Customer Churn Analysis & Prediction System** enables businesses to analyze customer behavior, predict churn, and take proactive actions using cutting-edge Machine Learning (ML) and Data Science techniques.  
+## Key Features
 
-Built with Python, SQL, and Power BI, this system automates data processing, applies supervised learning, and presents insights via interactive dashboards.  
+- Data cleaning and missing-value handling
+- Feature engineering such as recency, purchase-per-tenure, and discount ratio
+- Categorical encoding and numerical scaling
+- Model training and evaluation using scikit-learn and XGBoost
+- Streamlit deployment for user prediction input
+- Data visualization using Matplotlib and Seaborn
 
-**Star this repository** if you're passionate about customer analytics & AI-driven retention strategies!  
 
----
+## Tech Stack
 
-##  **Why Customer Churn Analysis Matters?**  
+- Python
+- pandas
+- numpy
+- scikit-learn
+- XGBoost
+- matplotlib
+- seaborn
+- Streamlit
 
-✅ Reduce churn and improve long-term customer relationships.  
-✅ Retaining existing customers is **5x cheaper** than acquiring new ones.  
-✅ Leverage predictive modeling, NLP sentiment analysis, and clustering to segment and understand customers.  
-✅ Personalize offers for at-risk customers with data-driven strategies.  
+## Power BI Dashboards
 
----
+This project includes Power BI dashboard visuals for customer churn analysis and customer segmentation. These dashboards help summarize churn trends, customer risk, and behavioral patterns in a business-friendly format.
 
-## **Key Features**  
-✅ **Data Preprocessing & Cleaning** – Handle missing values, feature engineering, outlier detection  
-✅ **Exploratory Data Analysis (EDA)** – RFM analysis, correlation analysis, customer segmentation  
-✅ **Predictive ML Models** – Implement Logistic Regression, Decision Trees, Random Forest, XGBoost 
-✅ **Customer Segmentation** – Apply K-Means & DBSCAN clustering for personalized engagement  (comming soon)
-✅ **Interactive Dashboards** – Power BI reports with real-time churn insights  
-✅ **Model Deployment** – Deploy Model with Streamlit
+### Dashboard highlights
+- Churn risk overview across customers
+- Customer segmentation by engagement and risk category
+- Visual understanding of churn drivers and retention opportunities
 
----
-
-### Designed For:  
-- **Data Scientists & ML Engineers** exploring real-world predictive modeling.  
-- **Data Analysts & BI Developers** creating churn insights & visualizations.  
-- **E-commerce Businesses** optimizing customer engagement & retention.  
-- **AI/ML Enthusiasts** learning end-to-end machine learning workflows.  
-
----
-
-## **Tech Stack & Tools Used**  
-**Programming & Data Processing:** Python, Pandas, NumPy
-**Data Visualization:** Power BI, Matplotlib, Seaborn  
-**Machine Learning Models:** Logistic Regression, Decision Tree, Random Forest, XGBoost
-**Interactive Dashboards:** Power BI reports with real-time churn insights
-
----
-
-## **Power BI Dashboards**  
-**Churn Prediction Dashboard** – Tracks churn risk & customer retention trends.  
-**Customer Segmentation Dashboard** – Visualizes high-risk customers & engagement levels.  
+### Dashboard images
 
 ![Power BI Dashboard](https://github.com/dataseekho/eccomerce-churn-analysis/blob/main/images/Customer%20Segmentation%20Dashboard%20-%20Power%20BI.png)
----
-<img width="621" alt="customer_churn_analysis" src="https://github.com/user-attachments/assets/a6cb7b25-75c6-4bc5-b06d-8472f1616b6c" />
 
------
+<img width="621" alt="customer_churn_analysis" src="https://github.com/user-attachments/assets/a6cb7b25-75c6-4bc5-b06d-8472f1616b6c" />
 
 <img width="619" alt="customer_churn_analysis2" src="https://github.com/user-attachments/assets/62d068f8-1daf-44fe-87f7-da99c97a75c9" />
 
-
-## **Project Structure**  
-
-```
-Ecommerce-Customer-Churn-Analysis  
- ┣ 📂 data/               # Raw & processed datasets  
- ┃ ┣ 📂 raw/             # Raw data files  
- ┃ ┣ 📂 processed/       # Cleaned & preprocessed data  
- ┣ 📂 notebooks/          # Jupyter notebooks for EDA, ML, NLP  
- ┣ 📂 models/             # Trained ML models (saved)  
- ┣ 📂 dashboards/         # Power BI dashboard files  
- ┣ 📂 airflow_dags/       # Apache Airflow DAGs for automation  
- ┣ 📂 streamlit_app/      # Streamlit UI for model deployment  
- ┃ ┣ 📜 app.py           # Main Streamlit app  
- ┃ ┣ 📜 config.py        # Config settings for UI  
- ┣ 📂 sql_queries/        # SQL scripts for database operations  
- ┣ 📂 reports/            # Generated PDF reports  
- ┣ 📂 images/             # Visualizations, plots & UI screenshots  
- ┣ 📜 train_model.py      # ML model training script  
- ┣ 📜 requirements.txt    # Python dependencies  
- ┣ 📜 LICENSE             # License information  
- ┣ 📜 README.md           # Project documentation    
-```
 ---
 
-## **Installation Guide**  
+## Repository Structure
 
-### 1️. Clone the Repository  
+```text
+Customer-Churn-Prediction-Using-ML/
+├── dashboard/
+│   └── ...
+├── data/
+│   └── fact_customer.csv
+├── images/
+│   └── ...
+├── modelling/
+│   ├── churn_analysis_pipeline.ipynb
+│   ├── Fact_Customer_Table.ipynb
+│   ├── churn_prediction_model.pkl
+│   └── x_train.csv
+├── streamlit_app/
+│   ├── app.py
+│   └── end_to_end_ml_model_app.py
+├── .gitignore
+├── LICENSE
+├── README.md
+├── requirements.txt
+└── venv/
+```
+
+## Installation
+
+### 1. Clone the repository
+
 ```bash
-git clone [https://github.com/najmarazzaq761/Customer-Churn-Prediction-Using-ML.git
+git clone https://github.com/najmarazzaq761/Customer-Churn-Prediction-Using-ML.git
 cd Customer-Churn-Prediction-Using-ML
 ```
 
-### 2️. Install Dependencies  
+### 2. Create and activate a virtual environment
+
+On Windows:
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+On macOS/Linux:
+
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️. Set Up Virtual Environment (Recommended)  
+
+## Run the Project
+
+### Run the churn prediction app
+
 ```bash
-python -m venv churn_env  
-source churn_env/bin/activate  # For Linux/macOS  
-churn_env\Scripts\activate    # For Windows  
+streamlit run streamlit_app/end_to_end_ml_model_app.py
 ```
 
-### 4. Train ML Models  
+### Run the dashboard app
+
 ```bash
-python train_model.py  
+streamlit run streamlit_app/app.py
 ```
 
-### 5. Run Streamlit Dashboard  
-```bash
-streamlit run dashboard.py  
+
+## Model and Notebook Notes
+
+- The preprocessing, feature engineering, and model experimentation are done in the notebook under `modelling/churn_analysis_pipeline.ipynb`.
+- The trained model is saved as `modelling/churn_prediction_model.pkl`.
+- The training features file is saved as `modelling/x_train.csv`.
+- The end-to-end prediction app loads the trained model and applies preprocessing before predicting churn.
+
+
+## Data
+
+The dataset used in this project is stored in:
+
+```text
+data/fact_customer.csv
 ```
----
 
-##  **Contributing to This Project**  
- **I welcome contributions!** Whether it's adding new ML models, improving automation, or refining dashboards, your input is valuable.  
+It contains customer-related features such as category, item, quantity, price, shopping mall, city, state, gender, age, tenure, purchase frequency, and churn label.
 
-### How to Contribute:  
-1. **Fork** this repository.  
-2. **Create a new branch**:  
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. **Make your changes and commit**:  
-   ```bash
-   git commit -m "Added feature X"
-   ```
-4. **Push and open a pull request**.  
 
-Join discussions, suggest improvements, and collaborate with fellow contributors!  
+## Contribution
 
----
+Contributions are welcome. You can:
+- improve the preprocessing pipeline
+- add new models or evaluation metrics
+- clean up the dashboard UI
+- improve documentation
+
+Please create a feature branch, make your changes, and open a pull request.
+
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
 ## Author
 
-**Najma Razzaq**  
-BSCS Student | Data Scientist | [LinkedIn](https://www.linkedin.com/in/najmarazzaq)
+Najma Razzaq
 
----
 
-## **License**  
-This repository is licensed under the **MIT License** – feel free to use and modify, but give proper attribution!  
